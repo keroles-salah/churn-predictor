@@ -10,122 +10,122 @@
 <h1 align="center">🏦 Bank Churn Predictor</h1>
 
 <p align="center">
-  <b>تطبيق ويب تفاعلي لتوقع احتمالية مغادرة عملاء البنك</b><br>
-  مبني بـ Streamlit + Random Forest — بواجهة احترافية داكنة بتصميم Neon Purple
+  <b>An interactive web app for predicting bank customer churn</b><br>
+  Built with Streamlit + Random Forest — featuring a premium dark UI with a Neon Purple design system
 </p>
 
 ---
 
-## 🎯 نظرة عامة
+## 🎯 Overview
 
-**Bank Churn Predictor** هو أداة تحليلات تنبؤية (Predictive Analytics) بتساعد البنوك والمؤسسات المالية إنها تتعرف على العملاء اللي عندهم احتمالية عالية إنهم يسيبوا البنك (Customer Churn)، وده من خلال إدخال بيانات العميل والحصول على توقع فوري مع نسبة الاحتمالية.
+**Bank Churn Predictor** is a predictive analytics tool that helps banks and financial institutions identify customers who are likely to leave (Customer Churn). Enter a customer's profile and get an instant prediction with probability scores.
 
-المشروع مش مجرد موديل ML — ده تطبيق كامل بواجهة مستخدم احترافية، تصميم عصري، وتجربة مستخدم سلسة.
-
----
-
-## ✨ المميزات
-
-- 🎨 **واجهة مستخدم احترافية** — تصميم داكن بتدرجات أرجواني (Neon Purple Dark Theme)، خط Space Grotesk، زراير gradient، كروت نتائج animated
-- ⚡ **توقع فوري** — بمجرد ما تدخل بيانات العميل وتضغط زر، يظهر التوقع في أقل من ثانية
-- 📊 **عرض احتمالي مزدوج** — نسبة بقاء العميل ونسبة مغادرته في كروت منفصلة جنب بعض
-- 📱 **متجاوب بالكامل** — Responsive design بيشتغل على الموبايل والتابلت والديسكتوب
-- 🔍 **تفاصيل تقنية** — Expander مدمج بيعرض البيانات المدخلة والـ raw prediction
-- 🧠 **موديل متكامل** — Scikit-learn Pipeline (StandardScaler + OneHotEncoder + Random Forest)
-- 🚀 **تحميل الموديل مرة واحدة** — `@st.cache_resource` عشان أداء سريع ومفيش reload
+This is not just an ML model — it's a complete application with a polished UI, modern design, and smooth user experience.
 
 ---
 
-## 🧰 التقنيات المستخدمة
+## ✨ Features
 
-| التقنية | الاستخدام |
-|---------|-----------|
-| **Python 3.10+** | لغة البرمجة الأساسية |
-| **Streamlit** | إطار عمل الواجهة التفاعلية |
-| **scikit-learn** | تدريب الموديل + Pipeline |
-| **pandas** | معالجة البيانات المدخلة |
-| **NumPy** | العمليات الحسابية |
-| **joblib** | حفظ وتحميل الموديل |
-| **Random Forest** | الخوارزمية المستخدمة للتوقع |
-| **CSS3** | تنسيق الواجهة المخصص |
+- 🎨 **Premium Dark UI** — Purple gradient theme, Space Grotesk font, gradient buttons, animated result cards
+- ⚡ **Instant Prediction** — Results appear in under a second after clicking Predict
+- 📊 **Dual Probability View** — Stay probability and churn probability displayed side-by-side in metric cards
+- 📱 **Fully Responsive** — Works on mobile, tablet, and desktop
+- 🔍 **Technical Details Panel** — Built-in expander showing raw prediction and input data
+- 🧠 **Full Pipeline Model** — Scikit-learn Pipeline (StandardScaler + OneHotEncoder + Random Forest)
+- 🚀 **Cached Model Loading** — `@st.cache_resource` ensures fast performance with no reloads
 
 ---
 
-## 🗂️ هيكل المشروع
+## 🧰 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **Python 3.10+** | Core programming language |
+| **Streamlit** | Interactive web UI framework |
+| **scikit-learn** | Model training + Pipeline |
+| **pandas** | Input data processing |
+| **NumPy** | Numerical operations |
+| **joblib** | Model serialization & loading |
+| **Random Forest** | Classification algorithm |
+| **CSS3** | Custom UI styling |
+
+---
+
+## 🗂️ Project Structure
 
 ```
 churn-predictor/
-├── app_dashboard.py              # تطبيق Streamlit — الواجهة + الـ logic
-├── bank_churn_model_full.pkl     # الموديل المدرب (Pipeline كامل)
-├── requirements.txt              # المكتبات المطلوبة
-└── README.md                     # التوثيق (الملف ده)
+├── app_dashboard.py              # Streamlit app — UI + logic
+├── bank_churn_model_full.pkl     # Trained model (full Pipeline)
+├── requirements.txt              # Python dependencies
+└── README.md                     # Documentation (this file)
 ```
 
 ---
 
-## ⚙️ التثبيت والتشغيل
+## ⚙️ Installation & Usage
 
-### المتطلبات الأساسية
+### Prerequisites
 
-- Python 3.10 أو أحدث
-- pip (مدير حزم Python)
+- Python 3.10 or later
+- pip (Python package manager)
 
-### خطوات التشغيل
+### Setup
 
 ```bash
-# 1. استنسخ المشروع
+# 1. Clone the repository
 git clone https://github.com/keroles-salah/churn-predictor.git
 cd churn-predictor
 
-# 2. ثبت المكتبات المطلوبة
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. شغّل التطبيق
+# 3. Run the app
 streamlit run app_dashboard.py
 
-# 4. افتح المتصفح
+# 4. Open your browser at
 # http://localhost:8501
 ```
 
 ---
 
-## 🎮 طريقة الاستخدام
+## 🎮 How to Use
 
-1. **افتح التطبيق** في المتصفح بعد تشغيل `streamlit run`
-2. **املأ بيانات العميل** في الـ 10 حقول:
-   - **Credit Score** — الدرجة الائتمانية (350–850)
-   - **Age** — العمر (18–100)
-   - **Tenure** — عدد سنوات التعامل مع البنك (0–10)
-   - **Balance** — الرصيد بالدولار (0–300,000)
-   - **Estimated Salary** — الراتب التقديري (0–300,000)
-   - **Number of Products** — عدد المنتجات المشترك فيها (1–4)
-   - **Geography** — الدولة (France, Germany, Spain)
-   - **Gender** — النوع (Female, Male)
-   - **Has Credit Card** — هل معاه بطاقة ائتمان؟
-   - **Is Active Member** — هل هو عضو نشط؟
-3. **اضغط زر "Predict Churn"**
-4. **شوف النتيجة فوراً** — العميل عالي الخطورة (High Risk) ولا منخفض الخطورة (Low Risk)، مع نسبة الاحتمالية المئوية
-
----
-
-## 📋 المدخلات (Features)
-
-| # | الخاصية | النوع | القيم الممكنة | الوصف |
-|---|---------|-------|---------------|-------|
-| 1 | CreditScore | رقمي | 350–850 | الدرجة الائتمانية للعميل |
-| 2 | Age | رقمي | 18–100 | عمر العميل |
-| 3 | Tenure | رقمي | 0–10 | عدد سنوات التعامل مع البنك |
-| 4 | Balance | رقمي | 0–300,000 | الرصيد الحالي بالدولار |
-| 5 | EstimatedSalary | رقمي | 0–300,000 | الراتب السنوي التقديري |
-| 6 | NumOfProducts | فئوي | 1, 2, 3, 4 | عدد منتجات البنك المشترك فيها |
-| 7 | Geography | فئوي | France, Germany, Spain | دولة العميل |
-| 8 | Gender | فئوي | Female, Male | نوع العميل |
-| 9 | HasCrCard | ثنائي | Yes / No | هل معاه بطاقة ائتمان؟ |
-| 10 | IsActiveMember | ثنائي | Yes / No | هل العميل عضو نشط؟ |
+1. **Open the app** in your browser after running `streamlit run`
+2. **Fill in the customer's data** across 10 input fields:
+   - **Credit Score** — Credit score (350–850)
+   - **Age** — Customer age (18–100)
+   - **Tenure** — Years with the bank (0–10)
+   - **Balance** — Current balance in USD (0–300,000)
+   - **Estimated Salary** — Annual estimated salary (0–300,000)
+   - **Number of Products** — Products subscribed to (1–4)
+   - **Geography** — Country (France, Germany, Spain)
+   - **Gender** — Female or Male
+   - **Has Credit Card** — Does the customer have a credit card?
+   - **Is Active Member** — Is the customer an active member?
+3. **Click "Predict Churn"**
+4. **See the result instantly** — High Risk or Low Risk, with percentage probabilities
 
 ---
 
-## 🧠 تفاصيل الموديل
+## 📋 Input Features
+
+| # | Feature | Type | Range / Values | Description |
+|---|---------|------|----------------|-------------|
+| 1 | CreditScore | Numeric | 350–850 | Customer's credit score |
+| 2 | Age | Numeric | 18–100 | Customer's age |
+| 3 | Tenure | Numeric | 0–10 | Years the customer has been with the bank |
+| 4 | Balance | Numeric | 0–300,000 | Current account balance (USD) |
+| 5 | EstimatedSalary | Numeric | 0–300,000 | Estimated annual salary (USD) |
+| 6 | NumOfProducts | Categorical | 1, 2, 3, 4 | Number of bank products the customer uses |
+| 7 | Geography | Categorical | France, Germany, Spain | Customer's country |
+| 8 | Gender | Categorical | Female, Male | Customer's gender |
+| 9 | HasCrCard | Binary | Yes / No | Does the customer have a credit card? |
+| 10 | IsActiveMember | Binary | Yes / No | Is the customer an active member? |
+
+---
+
+## 🧠 Model Details
 
 ### Pipeline Architecture
 
@@ -146,61 +146,61 @@ Input Data
         └── class_weight: balanced
 ```
 
-### أداء الموديل
+### Performance Metrics
 
-| المقياس | القيمة |
-|---------|--------|
+| Metric | Value |
+|--------|-------|
 | **Accuracy** | 86.8% |
 | **ROC-AUC** | 0.85 |
 | **Precision (Churn)** | ~0.84 |
 | **Recall (Churn)** | ~0.80 |
 | **F1-Score (Churn)** | ~0.82 |
 
-### البيانات
+### Dataset
 
-- **المصدر:** Kaggle — Bank Customer Churn Dataset
-- **الحجم:** 10,000 عميل بنك أوروبي
-- **نسبة الـ Churn:** ~20.4% (غير متوازنة — تم معالجتها بـ `class_weight='balanced'`)
+- **Source:** Kaggle — Bank Customer Churn Dataset
+- **Size:** 10,000 European bank customers
+- **Churn Rate:** ~20.4% (imbalanced — handled via `class_weight='balanced'`)
 
-### المعالجة المسبقة
+### Preprocessing
 
-- **StandardScaler:** توحيد الأعمدة الرقمية (متوسط = 0، انحراف معياري = 1)
-- **OneHotEncoder:** تحويل الأعمدة الفئوية (Geography, Gender) إلى أعمدة ثنائية
-- **Train/Test Split:** 80% تدريب، 20% اختبار مع `stratify` للحفاظ على نسبة الـ churn
+- **StandardScaler:** Standardizes numeric features (mean = 0, std = 1)
+- **OneHotEncoder:** Converts categorical features (Geography, Gender) to binary columns
+- **Train/Test Split:** 80% training, 20% testing with `stratify` to preserve churn ratio
 
 ---
 
-## 🎨 لقطات الشاشة
+## 🎨 Screenshots
 
 <p align="center">
-  <i>⚠️ الصور هتتحط هنا قريب</i>
+  <i>⚠️ Coming soon</i>
 </p>
 
 ---
 
-## 🔮 التطوير المستقبلي
+## 🔮 Roadmap
 
-- [ ] إضافة SHAP/LIME لتفسير التوقعات (Explainable AI)
-- [ ] Export التقرير كـ PDF
-- [ ] دعم رفع ملف CSV لتحليل batch
-- [ ] مقارنة بين موديلات مختلفة (XGBoost, LightGBM, Logistic Regression)
-- [ ] إضافة feature importance visualization
-- [ ] Deploy على Streamlit Cloud / Hugging Face Spaces
-- [ ] دعم اللغة العربية في الواجهة
-- [ ] Hyperparameter tuning مع GridSearchCV
-
----
-
-## 📄 الترخيص
-
-هذا المشروع مرخص تحت [MIT License](LICENSE) — تقدر تستخدمه وتعدل عليه بحرية.
+- [ ] Add SHAP/LIME for model explainability (Explainable AI)
+- [ ] Export prediction report as PDF
+- [ ] Batch prediction via CSV upload
+- [ ] Compare multiple models (XGBoost, LightGBM, Logistic Regression)
+- [ ] Feature importance visualization
+- [ ] Deploy to Streamlit Cloud / Hugging Face Spaces
+- [ ] Arabic language support in the UI
+- [ ] Hyperparameter tuning with GridSearchCV
 
 ---
 
-## 👤 المطور
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) — feel free to use and modify it.
+
+---
+
+## 👤 Author
 
 <p>
-  <b>كيرلس صلاح فخري (Keroles Salah Fakhry)</b> — <b>KSF</b><br>
+  <b>Keroles Salah Fakhry</b> — <b>KSF</b><br>
   🎓 Computer Science Student — Assiut National University<br>
   🤖 AI & Machine Learning Enthusiast
 </p>
