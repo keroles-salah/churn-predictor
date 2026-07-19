@@ -164,10 +164,10 @@ Input Data
 | Metric | Value |
 |--------|-------|
 | **Accuracy** | 86.1% |
-| **ROC-AUC** | 0.8653 |
-| **Precision (Churn)** | 0.76 |
-| **Recall (Churn)** | 0.4656 |
-| **F1-Score (Churn)** | 0.5782 |
+| **ROC-AUC** | 0.87 |
+| **Precision (Churn)** | 0.75 |
+| **Recall (Churn)** | 0.44 |
+| **F1-Score (Churn)** | 0.56 |
 
 ### Dataset
 
