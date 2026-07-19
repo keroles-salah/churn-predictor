@@ -56,7 +56,20 @@ This is not just an ML model — it's a complete application with a polished UI,
 ```
 churn-predictor/
 ├── app_dashboard.py              # Streamlit app — UI + logic
-├── bank_churn_model_full.pkl     # Trained model (full Pipeline)
+├── bank_churn_model.pkl          # Trained model (full Pipeline — Random Forest)
+├── scaler.pkl                    # StandardScaler for feature normalization
+├── requirements.txt              # Python dependencies
+├── Churn_Modelling.csv           # Dataset (10,000 bank customers)
+├── Churn_Modelling_Solution.ipynb # Exploratory notebook + training
+├── test_cases.xlsx               # Sample test cases for validation
+├── DOCS.md                       # Extended documentation
+├── screenshots/
+│   └── dashboard.png            # App UI screenshot
+└── README.md                     # Documentation (this file)
+```
+churn-predictor/
+├── app_dashboard.py              # Streamlit app — UI + logic
+├── bank_churn_model.pkl     # Trained model (full Pipeline)
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Documentation (this file)
 ```
@@ -170,24 +183,12 @@ Input Data
 
 ---
 
+
 ## 🎨 Screenshots
 
 <p align="center">
-  <i>⚠️ Coming soon</i>
+  <img src="screenshots/dashboard.png" alt="Bank Churn Predictor Dashboard" width="800">
 </p>
-
----
-
-## 🔮 Roadmap
-
-- [ ] Add SHAP/LIME for model explainability (Explainable AI)
-- [ ] Export prediction report as PDF
-- [ ] Batch prediction via CSV upload
-- [ ] Compare multiple models (XGBoost, LightGBM, Logistic Regression)
-- [ ] Feature importance visualization
-- [ ] Deploy to Streamlit Cloud / Hugging Face Spaces
-- [ ] Arabic language support in the UI
-- [ ] Hyperparameter tuning with GridSearchCV
 
 ---
 
