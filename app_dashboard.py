@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 import warnings
 
-warnings.filterwarnings('ignore')
 
 st.set_page_config(page_title="Churn Predictor", page_icon="📊", layout="centered")
 
