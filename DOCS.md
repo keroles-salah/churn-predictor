@@ -140,7 +140,7 @@ sns.heatmap(numeric_df.corr(), annot=True, cmap='coolwarm')
 | Age | +0.29 | Positive |
 | Balance | +0.12 | Positive |
 | IsActiveMember | -0.16 | Negative |
-| NumOfProducts | +0.05 | Positive |
+| NumOfProducts | -0.048 | Positive |
 | EstimatedSalary | +0.01 | ~None |
 
 ---
